@@ -7,7 +7,7 @@ void calcSum(int first, int second){
     cout << "Palautettu summa: " << first << " + " << second << " = " << first + second << endl;
 
 }
-
+ 
 
 void calcDiv(int first, int second){
     if(first == 0 | second == 0){

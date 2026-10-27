@@ -11,7 +11,7 @@ int main() {
 
     cout << "Anna luku: ";
     cin >> a;
-    
+     
     cout << "Anna toinen luku: ";
     cin >> b;
 
