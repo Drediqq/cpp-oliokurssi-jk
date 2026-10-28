@@ -1,6 +1,7 @@
 #ifndef FUNCS_H
 #define FUNCS_H
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void calcSum(int, int);
