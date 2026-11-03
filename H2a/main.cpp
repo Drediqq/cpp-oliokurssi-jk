@@ -1,8 +1,9 @@
+#include <iostream>
+#include <memory>
 #include "src/car.h"
 #include "src/rectangle.h"
 #include "src/student.h"
-#include <iostream>
-#include <memory>
+
 
 using namespace std;
 
@@ -37,5 +38,4 @@ int main() {
 
   return 0;
 
-  return 0;
 }
