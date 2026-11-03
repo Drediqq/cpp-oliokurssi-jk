@@ -36,11 +36,22 @@ class Student {
 public:
   std::string name;
   int studentNumber;
-  float average;
-  
+  double average;
+
   // Konstruktorit
   Student();
-  Student(std::string, int, float);
+  Student(std::string, int, double);
+
+  // Metodit
+  // Setterit
+  void setName(std::string);
+  void setStudentNumber(int);
+  void setAverage(double);
+  
+  // Getterit
+  std::string getName();
+  int getStudentNumber();
+  double getAverage();
 };
 
 #endif // STUDENT_H
