@@ -12,18 +12,10 @@ public:
   int yearModel;      // vuosimalli
 
   // oletuskonstruktori
-  Car (){
-    brand = "unknown";
-    model = "unknown";
-    yearModel = 0;
-  }
+  Car();
 
   // parempi konstruktori
-  Car(std::string brand, std::string model, int yearModel) {
-    this->brand = brand;
-    this->model = model;
-    this->yearModel = yearModel;
-  }
+  Car(std::string brand, std::string model, int yearModel);
 
   // metodit
   void setBrand(std::string);   // asettaa merkin
