@@ -1,7 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include <stdexcept>
-#include "funcs.h"
+#include "src/funcs.h"
 
 using namespace std;
 
