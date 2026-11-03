@@ -1,57 +1,28 @@
-/*
-Student-luokka
-
-Lisää projektiin luokka nimeltä Student. Tällä luokalla tulisi olla seuraavat
-jäsenmuuttujat ja metodit:
-
-Käytä tässä harjoituksessa hyväksesi Qt-Creatorin Refactor toimintoa. Kun olet
-luonut jäsen muuttujat, klikkaa hiiren oikealla ja valitse "Add Getter and
-Setter ...".
-
-    Jäsenmuuttujat:
-        name: merkkijono, joka sisältää opiskelijan nimen.
-        studentNumber: kokonaisluku, joka sisältää opiskelijanumeron.
-        average: reaaliluku, joka sisältää opiskelijan keskiarvon.
-    Metodit:
-    Setterit:
-        setName(string): asettaa opiskelijan nimen.
-        setStudentNumber(int): asettaa opiskelijanumeron.
-        setAverage(double): asettaa opiskelijan keskiarvon.
-    Getterit:
-        string getName(): palauttaa opiskelijan nimen.
-        int getStudentNumber(): palauttaa opiskelijanumeron(merkkimuotoinen
-tunniste). double getAverage(): palauttaa opiskelijan keskiarvon.
-
-Pääohjelmassa:
-
-    Luo Student-olio smart pointerilla ja aseta sille nimi, opiskelijanumero ja
-keskiarvo. Tulosta opiskelijan tiedot käyttämällä get-metodeja.
-*/
 #ifndef STUDENT_H
 #define STUDENT_H
 
 #include <iostream>
 
 class Student {
-public:
   std::string name;
   int studentNumber;
   double average;
 
-  // Konstruktorit
+public:
   Student();
-  Student(std::string, int, double);
-
-  // Metodit
+  Student(const Student &);
+  Student(Student &&);
+  Student &operator=(const Student &) = default;
+  Student &operator=(Student &&) = default;
+  Student(std::string name, int studentNumber, double average);
   // Setterit
-  void setName(std::string);
-  void setStudentNumber(int);
-  void setAverage(double);
-  
+  void setName(const std::string name);
+  void setStudentNumber(int studentNumber);
+  void setAverage(double average);
   // Getterit
-  std::string getName();
-  int getStudentNumber();
-  double getAverage();
+  std::string getName() const;
+  int getStudentNumber() const;
+  double getAverage() const;
 };
 
 #endif // STUDENT_H
