@@ -3,11 +3,14 @@
 
 #include <iostream>
 
+// vscodessa on ymmärtääkseni qt-creatorin refactorin kaltainen toiminto "code actions", joten sitä on nyt tässä käytetty sitten
 class Student {
+private:
   std::string name;
   int studentNumber;
   double average;
 
+  
 public:
   Student();
   Student(const Student &);

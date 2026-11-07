@@ -31,7 +31,9 @@ int retSum(int first, int second){
 
 
 float retDiv(int first, int second){
-
+    if (second == 0) {
+        throw runtime_error("nolla ei voi olla..");
+    }
     return ((float)first / (float)second);
 
 }

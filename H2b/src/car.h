@@ -5,12 +5,12 @@
 
 // Car
 class Car {
-
-public:
+private:
   std::string brand;  // merkki
   std::string model;  // malli
   int yearModel;      // vuosimalli
 
+public:
   // oletuskonstruktori
   Car (){
     brand = "unknown";

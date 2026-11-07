@@ -5,11 +5,11 @@
 
 // Rectangle
 class Rectangle {
-
-public:
+private:
   double width;  // suorakulmion leveys
   double height; // suorakulmion korkeus
 
+public:
   // oletuskonstruktori
   Rectangle() {
     width = 1;
@@ -17,14 +17,7 @@ public:
   }
 
   // parempi konstruktori
-  Rectangle(double width, double height) {
-    if (width <= 0 || height <= 0) {
-      throw std::invalid_argument(
-          "ei voi olla nolla tai vähemmän, eihän sitä olisi silloin olemassa!");
-    }
-    this->width = width;
-    this->height = height;
-  }
+  Rectangle(double width, double height);
 
   // metodit
   void setWidth(double);  // asettaa leveyden
