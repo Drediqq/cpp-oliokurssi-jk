@@ -1,5 +1,13 @@
 #include "rectangle.h"
 
+Rectangle::Rectangle(double width, double height) {
+  if (width <= 0 || height <= 0) {
+    throw std::invalid_argument(
+        "ei voi olla nolla tai vähemmän, eihän sitä olisi silloin olemassa!");
+  }
+  this->width = width;
+  this->height = height;
+}
 // asettaa leveyden
 void Rectangle::setWidth(double newWidth) { 
     width = newWidth; 

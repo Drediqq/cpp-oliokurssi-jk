@@ -49,33 +49,22 @@ int main() {
 				break;
 			
 			case 4:
-			
-				try{
-					
-					if((a == 0) | (b == 0)){
 
-						throw runtime_error("ei voi olla nolla");
-
-					}
-
-					divres = retDiv(a,b);
+				try {
+                	float divres = retDiv(a, b); 
 					cout << "Palautettu jako: " << fixed << setprecision(2) << a << "/" << b << " = " << divres << endl;
-				
-				} catch(runtime_error& e){
-				
-					cout << "Error: " << e.what() << endl;
+
+            	} catch (runtime_error& e) {
+
+                	cout << "Error: " << e.what() << endl;
 				
 				}
-			
 				break;
-			
-		}
 		
-		cout << endl << "Mitäs sitten tehdään?" << endl << "lopetus = 0, jatketaan = joku muu: " << endl << ">";
-		cin >> status;
-	}
-	
+			cout << endl << "Mitäs sitten tehdään?" << endl << "lopetus = 0, jatketaan = joku muu: " << endl << ">";
+			cin >> status;
+		}
+	} 
 	
 	return 0;
-	
-} 
+}

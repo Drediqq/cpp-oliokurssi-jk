@@ -9,11 +9,17 @@ using namespace std;
 
 int main() {
   // Car pinoon
-  Car newCar1;
-  Car newCar("Lada", "Samara", 1995);
-  // newCar.setBrand("Audi");
-  newCar1.printData();
+  Car newCar;
+  Car newCar1("Lada", "Samara", 1995);
+  Car newCar2;
+
+  newCar2.setBrand("Volkswagen");
+  newCar2.setModel("Passat");
+  newCar2.setYearModel(2004);
+  
   newCar.printData();
+  newCar1.printData();
+  newCar2.printData();
 
   // Rectangle kekoon
   Rectangle *newRectangle = new Rectangle();
