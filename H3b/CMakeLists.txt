@@ -4,6 +4,6 @@ project(h3b VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(h3b main.cpp)
+add_executable(h3b main.cpp src/animal.h src/animal.cpp src/dog.cpp src/dog.h)
 target_include_directories(h3b PRIVATE src)
 
