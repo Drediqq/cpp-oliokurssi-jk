@@ -10,7 +10,7 @@ void calcSum(int first, int second){
  
 
 void calcDiv(int first, int second){
-    if((first == 0) | (second == 0)){
+    if(second == 0){
 
         cout << "ei voi olla nolla" << endl; 
 
