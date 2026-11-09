@@ -7,7 +7,7 @@ class Animal {
 public:
   Animal();               // constructor
   virtual ~Animal();      // destructor
-  virtual void callOut(); // soidinkutsu
+  virtual void callOut(); // soidinkutsut
 };
 
 #endif

@@ -7,7 +7,7 @@ class Dog : public Animal {
 public:
   Dog();                   // constructor
   ~Dog() override;         // destructor
-  void callOut() override; // soidinkutsu
+  void callOut() override; // soidinkutsut
 };
 
 #endif
