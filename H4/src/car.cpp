@@ -1,6 +1,5 @@
 #include "car.h"
 #include <iostream>
-#include <vector>
 
 // oletuskonstruktori
 Car::Car() {
@@ -47,7 +46,7 @@ void Car::printDetails() {
 
   std::cout << "Moottori: " << objEngine.getHorsepower() << " hp, "
             << objEngine.getDisplacement() << " L" << std::endl;
-
+            
   std::cout << "Rengas 1: " << objWheel1.getSize() << " tuumaa, "
             << objWheel1.getType() << std::endl;
   std::cout << "Rengas 2: " << objWheel2.getSize() << " tuumaa, "
